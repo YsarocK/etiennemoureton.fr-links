@@ -7,5 +7,8 @@
 <script setup>
 useHead({
   title: 'My links',
+  meta: [
+    { name: 'robots', content: 'noindex' }
+  ],
 })
 </script>
