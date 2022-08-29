@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge'
   ],
   image: {
-    provider: 'static',
+    provider: 'ipx',
     dir: 'assets/img'
   }
 })
