@@ -1,5 +1,6 @@
 <template>
-  <div class="h-screen flex justify-center items-center">
+  <div class="h-screen flex flex-col justify-center gap-20 items-center p-6">
+    <Heading />
     <LinkList />
   </div>
 </template>

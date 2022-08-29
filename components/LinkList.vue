@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex flex-col gap-4">
+  <ul class="flex flex-col gap-4 w-full max-w-lg">
     <Link v-for="link in data" :key="link.id" :data="link" />
   </ul>
 </template>
