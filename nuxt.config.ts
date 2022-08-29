@@ -7,9 +7,5 @@ export default defineNuxtConfig({
     'nuxt-svgo',
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge'
-  ],
-  image: {
-    provider: 'ipx',
-    dir: 'assets/img'
-  }
+  ]
 })
