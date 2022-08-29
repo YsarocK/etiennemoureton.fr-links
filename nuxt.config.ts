@@ -9,6 +9,10 @@ export default defineNuxtConfig({
     '@nuxt/image-edge'
   ],
   image: {
-    dir: 'assets/img'
+    // provider: 'static',
+    dir: 'assets/img',
+    domains: [
+      'links.etiennemoureton.fr'
+    ]
   }
 })
