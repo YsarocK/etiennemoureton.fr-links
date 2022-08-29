@@ -5,4 +5,7 @@
   </div>
 </template>
 <script setup>
+useHead({
+  title: 'My links',
+})
 </script>
