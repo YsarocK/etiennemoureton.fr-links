@@ -12,8 +12,8 @@
 <script setup>
 const { data } = await useAsyncData('data', () => queryContent('/links').find())
 
-const categories = []
+const categories = ref([])
 data.value.forEach((el) => {
-  !categories.includes(el.type) && categories.push(el.type)
+  !categories.value.includes(el.type) && categories.value.push(el.type)
 })
 </script>
