@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     'vue-plausible'
   ],
   plausible: {
-    domain: 'links.etiennemoureton.fr'
+    domain: 'links.etiennemoureton.fr',
+    enableAutoOutboundTracking: true
   }
 })
