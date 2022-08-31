@@ -5,12 +5,17 @@
   </a>
 </template>
 
-<script setup>
-const props = defineProps({
-  data: Object
-})
+<script setup lang="ts">
+import { Component } from "vue"
+import { Link } from './LinkInterface'
 
-const Icon = defineAsyncComponent(() =>
-  import(`assets/svg/${props.data.img}.svg`)
+interface Props {
+  data: Link
+}
+
+const { data } = defineProps<Props>()
+
+const Icon: Component = defineAsyncComponent(() =>
+  import(`assets/svg/${data.img}.svg`)
 )
 </script>
