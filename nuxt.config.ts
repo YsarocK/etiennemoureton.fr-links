@@ -6,6 +6,10 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-svgo',
     '@nuxtjs/tailwindcss',
-    '@nuxt/image-edge'
-  ]
+    '@nuxt/image-edge',
+    'vue-plausible'
+  ],
+  plausible: {
+    domain: 'links.etiennemoureton.fr'
+  }
 })
