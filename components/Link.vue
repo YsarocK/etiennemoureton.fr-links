@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import { Component } from "vue"
-import { Link } from './LinkInterface'
+import Link from './LinkInterface'
 
 interface Props {
   data: Link

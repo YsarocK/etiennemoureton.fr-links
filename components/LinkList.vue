@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import { Link } from './LinkInterface'
+import Link from './LinkInterface'
 
 interface Link extends ParsedContent {}
 
