@@ -11,11 +11,10 @@
 
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import Link from './LinkInterface'
+import ExternalLink from './LinkInterface'
+interface ParsedLink extends ParsedContent, ExternalLink {}
 
-interface Link extends ParsedContent {}
-
-const { data } = await useAsyncData('data', () => queryContent<Link>('/links').find())
+const { data } = await useAsyncData('data', () => queryContent<ParsedLink>('/links').find())
 
 const categories = ref([])
 data.value.forEach((el) => {
