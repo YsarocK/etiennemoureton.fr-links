@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import { Component } from "vue"
-import ExternalLink from './LinkInterface'
+import type ExternalLink from '~/types/Link'
 
 interface Props {
   data: ExternalLink

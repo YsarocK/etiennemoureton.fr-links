@@ -11,7 +11,8 @@
 
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import ExternalLink from './LinkInterface'
+import type ExternalLink from '~/types/Link'
+
 interface ParsedLink extends ParsedContent, ExternalLink {}
 
 const { data } = await useAsyncData('data', () => queryContent<ParsedLink>('/links').find())
